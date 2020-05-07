@@ -1,0 +1,168 @@
+/*Color used pattern
+red = #f94b71
+blue =#4772d9
+lightblue =#756de3
+black =#303030
+
+
+
+*/
+
+*{margin:0px;padding:0px;
+
+}
+.topSection
+{
+	height:15rem;width:100%;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background: linear-gradient(270deg, #e99427, #62e122, #f4cf1d, #39c5eb);
+	background-size: 800% 800%;
+	animation: AnimationName 19s ease infinite;
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.imageSection
+{
+	position: relative;
+	top:50%;left:50%;
+	transform: translate(-50%, -50%);
+}
+
+.mainHeading
+{
+	font-size:10vw;
+	text-align: center;
+	font-weight: bold;
+	transform:skew(-10deg) rotate(-2deg);
+	letter-spacing: 5px;
+	word-spacing: -8px;
+	color:tomato;
+/*	background:url('file:///home/bittu/Documents/docs/image/back.png');
+	background-size:cover;
+ 	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;*/
+	text-shadow: 
+	-3px 3px 0 firebrick,
+	-2.5px 2.5px 0 firebrick,
+	-2px 2px 0 firebrick,
+	-1.5px 1.5px 0 firebrick,
+	-1px 1px 0 firebrick,
+	-0.5px 0.5px 0 firebrick,
+	-30px 20px 5px dimgrey;
+	animation: textAni 1s 1 alternate ease;
+}
+@keyframes textAni
+{
+	0%{transform: skew(-2deg) rotate3d(2,0,0,30deg)letter-spacing: 20px;box-shadow: 0 0 10px 100px white;}
+	
+	50%{transform: skew(-8deg) rotate3d(5,0,0,90deg);box-shadow: 0 0 10px 50px white;}
+
+	80%{letter-spacing:-5px;box-shadow: 0 0 10px 0px white;}
+}
+/*top Bar */
+.topBar	
+{
+	position: sticky;
+	height:2.5rem;
+	width:100%;
+	user-select: none;
+	background-color: tomato;
+}
+/*.topBar	*
+{border: 1px solid}*/
+.topBarLeftMenu
+{
+	position: relative;
+	display:inline-block;
+	left:40px;
+	top:50%;
+	cursor:pointer;
+	transform: translateY(-50%);
+	z-index: 3;
+}
+.topBarLeftMenu div
+{
+	height:3px;
+	width:30px;
+	background-color:#fff;
+}
+.topBarLeftMenu div:nth-child(2)
+{
+	margin: 5px;
+	transition: margin .2s;
+}
+
+/*Menus class9 and class10*/
+
+.topBarLeftItems
+{
+	position: relative;
+	display: inline;
+	left:80px;
+	user-select: none;
+	transform: translateY(-50%);
+	transition: left 1s;
+}
+.topBarLeftItems p
+{
+	display: inline;
+	font-size: 1rem;	
+	margin:1vw;padding:5px 10px;
+	background-color: white;
+	font-weight: bold;
+	color:tomato;
+	border-radius: 0 0 5px 5px;
+	box-shadow: 
+	-0.5px 0.5px 0px lightgray,
+	-1px 1px 0px lightgray,
+	-1.5px 1.5px 0px lightgray,
+	-2px 2px 0px lightgray,
+	-2.5px 2.5px 0px lightgray,
+	-3px 3px 0px lightgray,
+	-3px 0px 0px lightgray;
+	transition: box-shadow .2s;
+	
+}
+.topBarLeftItems p:active
+{
+	box-shadow:0px 0px 0px lightgray;
+	color:white;
+	background: orange;
+}
+
+
+
+
+
+
+@media screen and (max-width:450px)
+{
+	.topBar
+	{
+		height:1.5rem;
+	}
+	.topBarLeftMenu
+	{
+		left:20px;
+		top:10%;
+		transform: translateY(25%);
+	}
+	.topBarLeftMenu div:nth-child(2)
+	{
+		margin: 3px;
+	}
+	.topBarLeftMenu div
+	{	
+		height:2px;
+		width:25px;
+	}
+	.topBarLeftItems p
+	{
+		font-size: .8rem;
+		padding:2px 5px;
+	}
+}
