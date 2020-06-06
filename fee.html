@@ -1,0 +1,133 @@
+<html>
+    <head><title>Welcome | $name</title>
+    <link rel="stylesheet" href="innerStyle.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Passero+One&family=Play&display=swap" rel="stylesheet">
+</head>
+<body onload="dateTime(); summeryBox()">
+
+<!-- Navigation Section -->
+
+<nav class="navBar">
+    <div class="navleft">
+        <p>Data Solution.io</p>
+    </div>
+    <div class="navCenter">
+        <p id="time"></p>
+    </div>
+    <div class="navRight">
+        <img src="images/male.svg">
+        <p id="userName">Bittu Kumar</p>    <!-- User name Here-->
+        <p class="btn btnOrange">Log Out</p>
+    </div>
+</nav>
+
+<!-- right Pane -->
+<section class="forAlign">
+<div class="menuPane">
+    <ul class="paneMenu">
+        <a href="index.html">
+            <li>
+                <img src="images/summary.png" alt="">
+                <p>Summary Report</p>
+            </li>
+        </a>
+        <a href="fee.html">
+            <li class="activeClick">
+                <img src="images/fee.png" alt="">
+                <p>Fee</p>
+            </li>
+        </a>
+        <a href="Progress.html">
+            <li>
+                <img src="images/progress.png" alt="">
+                <p>Progress</p>
+            </li>
+        </a>
+        <a href="details.html">
+            <li>
+                <img src="images/details.png" alt="">
+                <p>My Details</p>
+            </li>
+        </a>
+    </ul>
+
+    <p class="btn btnBlue">Need Help?</p>
+</div>
+
+<!-- content Pane -->
+<div class="contentPane">
+    <div class="contentTop">
+        <div>
+            <p>Fee</p>
+            <p>Rs. 8000</p>
+        </div>
+        <div>
+            <p>Fee Dues</p>
+            <p>Rs. 6000</p>
+        </div>
+        <div>
+            <p>Last Fee Paid</p>
+            <p>12-02-2002</p>
+        </div>
+        <div>
+            <p>Total Fee Paid</p>
+            <p>Rs. 22,000</p>
+        </div>
+        <div>
+            <p>Total Extra Changes</p>
+            <p>Rs. 12,960</p>
+        </div>
+    </div>
+    <div class="contentPaneData">
+        <p class="contentPaneDataHeading">
+            Fee Details
+        </p>
+        <select class="contentPaneDataYear"></select>
+        <select class="contentPaneDataMonth"></select>
+        <hr class="contentRole">
+          <div class="description">
+            <table width=100% cellspacing=15>
+            <tr>
+                <td>Fee Description</td>
+                <td>Amount</td>
+            </tr>
+            <tr>
+                <td>Tuition Fee</td>
+                <td>25,000.00</td>
+            </tr>
+            <tr>
+                <td>Registration Fee</td>
+                <td>75,000.00</td>
+            </tr>
+            <tr>
+                <td>Examination Fee</td>
+                <td>12,000.00</td>
+            </tr>
+            <tr>
+                <td>Late Fine</td>
+                <td>2,000.00</td>
+            </tr>
+            <tr>
+                <td>Transpostation Fee</td>
+                <td>15,760.00</td>
+            </tr>
+            <tr>
+                <td>Extra Charges</td>
+                <td>800</td>
+            </tr>
+            <tr>
+                <td>Amount</td>
+                <td>1,30,560</td>
+            </tr>
+            </table>
+            <p class="btn btnOrange" style="display: inline;float:right;">Pay</p>
+       </div>
+    </div>
+</div>
+</section>
+
+<footer>
+    <script src="script.js"></script>
+</footer>
+</body>
+</html>

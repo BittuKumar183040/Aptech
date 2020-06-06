@@ -1,0 +1,96 @@
+<html>
+    <head><title>Welcome | $name</title>
+    <link rel="stylesheet" href="innerStyle.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Passero+One&family=Play&display=swap" rel="stylesheet">
+    <script src="scripts/Chart.min.js"></script>
+</head>
+<body onload="graphShow(); summeryBox()">
+
+<!-- Navigation Section -->
+
+<nav class="navBar">
+    <div class="navleft">
+        <p>Data Solution.io</p>
+    </div>
+    <div class="navCenter">
+        <p id="time"></p>
+    </div>
+    <div class="navRight">
+        <img src="images/male.svg">
+        <p id="userName">Bittu Kumar</p>    <!-- User name Here-->
+        <p class="btn btnOrange">Log Out</p>
+    </div>
+</nav>
+
+<!-- right Pane -->
+<section class="forAlign">
+<div class="menuPane">
+    <ul class="paneMenu">
+        <a href="index.html">
+            <li class="activeClick">
+                <img src="images/summary.png" alt="">
+                <p>Summary Report</p>
+            </li>
+        </a>
+        <a href="fee.html">
+            <li>
+                <img src="images/fee.png" alt="">
+                <p>Fee</p>
+            </li>
+        </a>
+        <a href="Progress.html">
+            <li>
+                <img src="images/progress.png" alt="">
+                <p>Progress</p>
+            </li>
+        </a>
+        <a href="details.html">
+            <li>
+                <img src="images/details.png" alt="">
+                <p>My Details</p>
+            </li>
+        </a>
+    </ul>
+
+    <p class="btn btnBlue">Need Help?</p>
+</div>
+
+<!-- content Pane -->
+<div class="contentPane">
+    <div class="contentTop">
+        <div>
+            <p>New Fee</p>
+            <p>Rs. 8000</p>
+        </div>
+        <div>
+            <p>Fee Dues</p>
+            <p>Rs.6000</p>
+        </div>
+        <div>
+            <p>Last Fee Paid On</p>
+            <p>12-02-2002</p>
+        </div>
+        <div>
+            <p>Last Query</p>
+            <p>Book not recieved</p>
+        </div>
+        <div>
+            <p>Teacher's Report</p>
+            <p>Need to Work Hard</p>
+        </div>
+    </div>
+    <div class="contentPaneData">
+        <p class="contentPaneDataHeading">
+            Progress Report till 2020
+        </p>
+        <hr class="contentRole">
+        <canvas id="myChart"></canvas>
+    </div>
+</div>
+</section>
+
+<footer>
+    <script src="script.js"></script>
+</footer>
+</body>
+</html>

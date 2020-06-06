@@ -1,0 +1,348 @@
+/* Color Codes */
+/*
+blue = #1FBEF0
+darkBlue=#80B0F6
+orange = #E39062
+
+FONT FAMILEY
+
+font-family: 'Passero One', cursive;
+font-family: 'Play', sans-serif;
+
+*/
+
+
+
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+body{overflow: hidden;}
+a{text-decoration: none;}
+.btn
+{
+    box-shadow: 2px 3px 5px rgb(41, 40, 40);
+    cursor: pointer;
+    transition: all.2s;
+    font-size: 16.5px;
+    font-family: 'Passero One', cursive;
+    border-radius: 5px;
+}
+.btnBlue
+{
+    padding:10px 50px;
+    background-color: #1FBEF0;
+    margin-right: 10px;
+    color: #fff;
+}
+.btnOrange
+{
+    padding:5px 25px;
+    background-color: #E39062;
+    margin-right: 20px;
+    color: #fff;
+}
+.btn:hover
+{
+    /* opacity: .8; */
+    box-shadow: 2px 3px 2px gray;
+}
+/* img{width:52px;height:52px;} */
+
+/* nav bar Style */
+.navBar
+{
+    height:44px;
+    width:100vw;
+    background-color: #1FBEF0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    position: absolute;
+    box-shadow: 0px 5px 5px gray;
+}
+.navleft p, .navCenter p, .navRight,.navRight img
+{
+    position: relative;
+    top:50%;
+    transform: translateY(-50%);
+    font-family: 'Passero One', cursive;
+}
+.navleft p
+{
+    background: -webkit-linear-gradient(#1FBEF0, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    color:#1FBEF0;
+    font-size: 18.5px;
+    padding-left:24px;
+    letter-spacing: 2.5px;
+}
+.navCenter p{
+    text-align: center;
+    color:#fff;
+    font-size: 18.5px;
+    letter-spacing: 2.5px;
+    transition: all .5s;
+}
+.navRight{
+    text-align: right;
+}
+.navBar .navRight *
+{
+    display:inline;
+}
+.navRight img
+{
+    filter: invert();
+    width:26px;
+    height:26px;
+}
+#userName
+{
+    color:#fff;
+    font-size:16.5px;
+    margin-right: 15px;
+}
+
+/* Nav Bar style End */
+/* ******************************** */
+/* Menu Pane Starts Here */
+
+.forAlign
+{
+    display: grid;
+    grid-template-columns: 181px auto;
+    position: absolute;
+    top:44px;
+}
+.menuPane
+{
+    background-color: rgb(127, 255, 212);
+    height: 100vh;
+    cursor: pointer;
+}
+.paneMenu li
+{
+    padding:5px 0 5px 10px;
+    list-style-type: none;
+    display: grid;
+    border:2px solid transparent;
+    grid-template-columns: 40px auto;
+    transition: border .5s;
+}
+.paneMenu li:hover
+{
+    border-bottom:2px solid #80B0F6;
+}
+.paneMenu .activeClick, .paneMenu .activeClick p
+{
+    background-color: #80B0F6;
+    color:#fff;
+}
+
+.paneMenu li img
+{
+    width:26px;
+    height:26px;
+}
+.paneMenu li p
+{
+    font-size: 12px;
+    color:#1FBEF0;
+    font-family: 'Play', sans-serif;
+    margin-top:7px ;
+}
+.paneMenu li *
+{
+    display: inline;
+}
+.menuPane .btnBlue
+{
+    display: inline-block;
+    padding:15px 25px;
+    margin-left: 20px;
+    transform: translate(0px,250px);
+    box-shadow:
+    1px 1px 1px rgb(25, 154, 194),
+    2px 2px 1px rgb(25, 154, 194),
+    3px 3px 1px rgb(25, 154, 194),
+    4px 4px 1px rgb(25, 154, 194),
+    6px 6px 5px rgb(41, 40, 40);
+}
+.menuPane .btnBlue:hover
+{
+    box-shadow:
+    1px 1px 1px rgb(25, 154, 194),
+    1.5px 1.5px 1px rgb(25, 154, 194),
+    3px 3px 5px rgb(41, 40, 40);
+    transform: translate(3px,250px);
+}
+/* ********************** Menu Pane Ended */
+/* Content Pane */
+.contentPane
+{
+    padding:10px;
+    background-color: #EBEBEB;
+    width: calc(100vw - 181px);
+}
+.contentTop
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.contentTop div{
+    background-color: #E39062;
+    height:60;
+    padding:10px 20px;
+    margin:10px;
+    user-select: none;
+    border-radius: 3px;
+    transition:box-shadow .2s, transform .2s;
+    cursor: pointer;
+    box-shadow:
+    1px 1px 1px rgb(189, 120, 83),
+    2px 2px 1px rgb(189, 120, 83),
+    3px 3px 1px rgb(189, 120, 83),
+    4px 4px 1px rgb(189, 120, 83),
+    8px 8px 4px #333131;
+
+}
+.contentTop div:hover
+{
+    box-shadow:
+    1px 1px 1px rgb(189, 120, 83),
+    2px 2px 1px rgb(189, 120, 83),
+    4px 4px 4px #333131;
+    transform: translateX(2px);
+}
+.contentTop div:active
+{
+    box-shadow:
+    1px 1px 1px rgb(189, 120, 83),
+    2px 2px 3px #333131;
+    transform: translateX(5px);
+}
+.contentTop div p:first-child
+{
+    font-size:13.5;
+    font-weight: bold;
+    color:#fff;
+    font-family: 'Play', sans-serif;
+    letter-spacing: 2px;
+}
+.contentTop div p:last-child
+{
+    font-size:15;
+    color:#000;
+    font-family: 'Play', sans-serif;
+    letter-spacing: 2px;
+}
+/* Progress Report Data */
+.contentPaneData
+{
+    background-color: #fff;
+    margin-top: 10px;
+    height:100%;
+    padding:10px;
+}
+
+.contentPaneDataHeading
+{
+    color:#52301D;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 3px rgba(70, 69, 69, 0.692);
+    font-family:"play";
+}
+.contentRole
+{
+    width:85%;
+    box-shadow: 0px 0px 3px rgb(128, 128, 128);
+}
+
+.contentPaneDataYear,.contentPaneDataMonth
+{
+    float: right;
+    padding:5px 10px;
+    font-family:"play";
+}
+.description
+{
+    margin-top: 10px;
+    font-family:'Play', sans-serif;
+}
+.description table tr:first-child
+{
+    color:#000;
+    font-size:15.5px;
+    font-weight: bold;
+}
+.description table tr:not(:first-child) td:last-child::before
+{
+    content: "Rs. ";
+}
+.description table tr:last-child
+{
+    color:#E33F3F;
+    font-size:15.5px;
+    font-weight: bold;
+    text-align: right;
+}
+.description table tr:last-child td:last-child
+{
+    text-align: left;
+}
+.description table tr:nth-child(2) td,.description table tr:last-child td
+{
+    border-top:2px solid black; 
+}
+.description table tr:last-child td
+{
+    background-color: rgba(59, 82, 146, 0.233);
+    padding:5px
+}
+.description table tr
+{
+    color:#E33F3F;
+    font-size: 14px;
+}
+
+/* Progress content style */
+.contentPane{
+    font-family: 'Play', sans-serif ;
+
+}
+.contentHeading, .teacherReportHeading
+{
+    color:#fff;
+    background:#E39062;
+    padding: 10px 20px;
+    letter-spacing: 3px;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 2px;
+}
+
+.contentData table tr:first-child
+{
+    font-weight: bold;
+    font-size: 15.5px;
+    letter-spacing: 1px;
+}
+.contentData table tr:not(:first-child)
+{
+    font-size: 15.5px;
+    color:#E39062;
+}
+
+.teacherReport
+{
+    background-color: #fff;
+    padding:15px;
+    margin-top:5px;
+}
+.teacherReportData::before
+{
+    content:"-> ";
+    color:red;
+}

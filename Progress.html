@@ -1,0 +1,94 @@
+<html>
+    <head><title>Welcome | $name</title>
+    <link rel="stylesheet" href="innerStyle.css">    
+    <link href="https://fonts.googleapis.com/css2?family=Passero+One&family=Play&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation Section -->
+
+<nav class="navBar">
+    <div class="navleft">
+        <p>Data Solution.io</p>
+    </div>
+    <div class="navCenter">
+        <p id="time"></p>
+    </div>
+    <div class="navRight">
+        <img src="images/male.svg">
+        <p id="userName">Bittu Kumar</p>    <!-- User name Here-->
+        <p class="btn btnOrange">Log Out</p>
+    </div>
+</nav>
+
+<!-- right Pane -->
+<section class="forAlign">
+<div class="menuPane">
+    <ul class="paneMenu">
+        <a href="index.html">
+            <li>
+                <img src="images/summary.png" alt="">
+                <p>Summary Report</p>
+            </li>
+        </a>
+        <a href="fee.html">
+            <li>
+                <img src="images/fee.png" alt="">
+                <p>Fee</p>
+            </li>
+        </a>
+        <li class="activeClick">
+            <img src="images/progress.png" alt="">
+            <p>Progress</p>
+        </li>
+        <a href="#">
+            <li>
+                <img src="images/details.png" alt="">
+                <p>My Details</p>
+            </li>
+        </a>
+    </ul>
+
+    <p class="btn btnBlue">Need Help?</p>
+</div>
+
+<!-- content Pane -->
+<div class="contentPane">
+    <p class="contentHeading">Bittu Kumar's Progress Report</p>
+    <div class="contentData">
+        <table width=100% cellpadding=10 cellspacing=15>
+            <tr>
+                <td>Quality</td>
+                <td>Grade</td>
+            </tr>
+            <tr><td colspan=2><hr></td></tr>
+            <tr>
+                <td>Performance in class</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Communication</td>
+                <td>B</td>
+            </tr>
+            <tr>
+                <td>Decipline</td>
+                <td>A</td>
+            </tr>
+            <tr>
+                <td>Attendence</td>
+                <td>A</td>
+            </tr>
+        </table>
+        <p class="teacherReportHeading">Teacher's Report</p>
+        <div class="teacherReport">
+            <p class="teacherReportData">Try performing better on your communication skills, which increase your Progress.</p>
+        </div>
+    </div>
+</div>
+</section>
+
+<footer>
+    <script src="script.js"></script>
+</footer>
+</body>
+</html>
